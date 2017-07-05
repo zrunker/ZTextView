@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ZTextView</string>
+    <string name="marquee_content">案例，通过在XML中进行TextView属性设置来实现跑马灯！这里需要三个方面，简单，文本长度，单行显示。</string>
+</resources>
