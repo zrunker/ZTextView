@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements AutoVerticalScrol
         AutoVerticalScrollTextView textView = (AutoVerticalScrollTextView) findViewById(R.id.autoVerticalScrollTextView);
 
         list = new ArrayList<>();
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < 5; i++)
             list.add("测试垂直滚动" + i);
 
         // 初始化
