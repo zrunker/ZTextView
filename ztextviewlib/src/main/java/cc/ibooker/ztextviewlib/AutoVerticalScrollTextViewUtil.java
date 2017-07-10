@@ -42,6 +42,8 @@ public class AutoVerticalScrollTextViewUtil {
         this.textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (ZTextViewClickUtil.isFastClick())
+                    return;
                 if (onMyClickListener != null)
                     onMyClickListener.onMyClickListener(currentPos, title);
             }
