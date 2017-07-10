@@ -2,12 +2,14 @@ package cc.ibooker.ztextview;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
 import cc.ibooker.ztextviewlib.AutoVerticalScrollTextView;
 import cc.ibooker.ztextviewlib.AutoVerticalScrollTextViewUtil;
+import cc.ibooker.ztextviewlib.SpannableStringTextViewUtil;
 
 public class MainActivity extends AppCompatActivity implements AutoVerticalScrollTextViewUtil.OnMyClickListener {
     private ArrayList<String> list;
@@ -30,6 +32,55 @@ public class MainActivity extends AppCompatActivity implements AutoVerticalScrol
                 .start();
         // 点击事件监听
         aUtil.setOnMyClickListener(this);
+
+
+        TextView testTv = (TextView) findViewById(R.id.tv_test);
+
+//        testTv.setText("测试修改颜色为ABC");
+//        SpannableStringTextViewUtil.updateForeColorSpan(testTv, 1, 3, "#40aff2");
+
+//        testTv.setText("test");
+//        SpannableStringTextViewUtil.addForeColorSpan(testTv, "测试修改颜色为ABC", 1, 3 , "#40aff2");
+
+//        testTv.setText("测试修改颜色为ABC");
+//        SpannableStringTextViewUtil.updateBackColorSpan(testTv, 1, 3, "#40aff2");
+
+//        testTv.setText("test");
+//        SpannableStringTextViewUtil.addBackColorSpan(testTv, "测试修改颜色为ABC", 1, 3 , "#40aff2");
+
+//        SpannableStringTextViewUtil.addFontSizeSpan(testTv, "测试修改颜色为ABC", 1, 3, 60);
+
+//        testTv.setText("测试修改颜色为ABC");
+//        SpannableStringTextViewUtil.addUrlSpan(testTv, "超链接", 0, 3, "http://www.baidu.com");
+
+//        testTv.setText("测试修改颜色为ABC");
+//        SpannableStringTextViewUtil.addClickableSpan(testTv, "点击", 0, 2, new SpannableStringTextViewUtil.OnClickSpanListener() {
+//            @Override
+//            public void onClickSpan() {
+//                Toast.makeText(MainActivity.this, "点击", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+
+//        testTv.setText("测试修改颜色为ABC");
+//        SpannableStringTextViewUtil.addStyleSpan(testTv, "123456", 0, 3);
+
+//        testTv.setText("测试修改颜色为ABC");
+//        SpannableStringTextViewUtil.addStyleBoldSpan(testTv, "123456", 0, 3);
+
+//        testTv.setText("测试修改颜色为ABC");
+//        SpannableStringTextViewUtil.addStyleItalicSpan(testTv, "123456", 0, 3);
+
+//        testTv.setText("测试修改颜色为ABC");
+//        SpannableStringTextViewUtil.addStrikeSpan(testTv, "123456", 0 , 3);
+
+//        testTv.setText("测试修改颜色为ABC");
+//        SpannableStringTextViewUtil.updateStrikeMySelfSpan(testTv, 0 , 3);
+
+//        testTv.setText("测试修改颜色为ABC");
+//        SpannableStringTextViewUtil.addUnderLineSpan(testTv, "下划线", 0, 3);
+
+        testTv.setText("测试修改颜色为ABC");
+        SpannableStringTextViewUtil.addImageSpan(testTv, getResources().getDrawable(R.mipmap.ic_launcher));
     }
 
     // autoVerticalScrollTextView点击事件监听

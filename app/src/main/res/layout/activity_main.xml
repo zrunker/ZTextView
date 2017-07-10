@@ -38,5 +38,11 @@
         android:paddingStart="5dp"
         android:paddingTop="10dp"
         android:text="@string/app_name" />
+
+    <TextView
+        android:id="@+id/tv_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" />
 </LinearLayout>
 
