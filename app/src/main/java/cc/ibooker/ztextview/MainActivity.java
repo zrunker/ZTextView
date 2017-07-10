@@ -36,24 +36,25 @@ public class MainActivity extends AppCompatActivity implements AutoVerticalScrol
 
         TextView testTv = (TextView) findViewById(R.id.tv_test);
 
-//        testTv.setText("测试修改颜色为ABC");
+//        testTv.setText("测试修改颜色");
 //        SpannableStringTextViewUtil.updateForeColorSpan(testTv, 1, 3, "#40aff2");
 
-//        testTv.setText("test");
-//        SpannableStringTextViewUtil.addForeColorSpan(testTv, "测试修改颜色为ABC", 1, 3 , "#40aff2");
+//        testTv.setText("测试添加颜色");
+//        SpannableStringTextViewUtil.addForeColorSpan(testTv, "TEST", 1, 3 , "#40aff2");
 
-//        testTv.setText("测试修改颜色为ABC");
+//        testTv.setText("测试修改颜色");
 //        SpannableStringTextViewUtil.updateBackColorSpan(testTv, 1, 3, "#40aff2");
 
-//        testTv.setText("test");
-//        SpannableStringTextViewUtil.addBackColorSpan(testTv, "测试修改颜色为ABC", 1, 3 , "#40aff2");
+//        testTv.setText("测试添加颜色");
+//        SpannableStringTextViewUtil.addBackColorSpan(testTv, "TEST", 1, 3 , "#40aff2");
 
-//        SpannableStringTextViewUtil.addFontSizeSpan(testTv, "测试修改颜色为ABC", 1, 3, 60);
+//        testTv.setText("测试添加文本大小");
+//        SpannableStringTextViewUtil.addFontSizeSpan(testTv, "TEST", 1, 3, 60);
 
-//        testTv.setText("测试修改颜色为ABC");
+//        testTv.setText("测试添加超链接");
 //        SpannableStringTextViewUtil.addUrlSpan(testTv, "超链接", 0, 3, "http://www.baidu.com");
 
-//        testTv.setText("测试修改颜色为ABC");
+//        testTv.setText("测试添加点击");
 //        SpannableStringTextViewUtil.addClickableSpan(testTv, "点击", 0, 2, new SpannableStringTextViewUtil.OnClickSpanListener() {
 //            @Override
 //            public void onClickSpan() {
@@ -61,25 +62,25 @@ public class MainActivity extends AppCompatActivity implements AutoVerticalScrol
 //            }
 //        });
 
-//        testTv.setText("测试修改颜色为ABC");
-//        SpannableStringTextViewUtil.addStyleSpan(testTv, "123456", 0, 3);
+//        testTv.setText("测试添加粗体+斜体");
+//        SpannableStringTextViewUtil.addStyleSpan(testTv, "TEST", 0, 3);
 
-//        testTv.setText("测试修改颜色为ABC");
-//        SpannableStringTextViewUtil.addStyleBoldSpan(testTv, "123456", 0, 3);
+//        testTv.setText("测试添加粗体");
+//        SpannableStringTextViewUtil.addStyleBoldSpan(testTv, "TEST", 0, 3);
 
-//        testTv.setText("测试修改颜色为ABC");
-//        SpannableStringTextViewUtil.addStyleItalicSpan(testTv, "123456", 0, 3);
+//        testTv.setText("测试添加斜体");
+//        SpannableStringTextViewUtil.addStyleItalicSpan(testTv, "TEST", 0, 3);
 
-//        testTv.setText("测试修改颜色为ABC");
-//        SpannableStringTextViewUtil.addStrikeSpan(testTv, "123456", 0 , 3);
+//        testTv.setText("测试添加删除线");
+//        SpannableStringTextViewUtil.addStrikeSpan(testTv, "TEST", 0 , 3);
 
-//        testTv.setText("测试修改颜色为ABC");
+//        testTv.setText("测试修改删除线");
 //        SpannableStringTextViewUtil.updateStrikeMySelfSpan(testTv, 0 , 3);
 
-//        testTv.setText("测试修改颜色为ABC");
+//        testTv.setText("测试添加下划线");
 //        SpannableStringTextViewUtil.addUnderLineSpan(testTv, "下划线", 0, 3);
 
-        testTv.setText("测试修改颜色为ABC");
+        testTv.setText("测试添加图片");
         SpannableStringTextViewUtil.addImageSpan(testTv, getResources().getDrawable(R.mipmap.ic_launcher));
     }
 
