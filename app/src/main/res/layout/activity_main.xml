@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_vertical"
     android:orientation="vertical">
 
     <!--系统跑马灯-->
@@ -20,9 +21,6 @@
     <cc.ibooker.ztextviewlib.MarqueeTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ellipsize="marquee"
-        android:marqueeRepeatLimit="marquee_forever"
-        android:singleLine="true"
         android:text="@string/marquee_content" />
 
     <!--垂直滚动TextView-->
@@ -45,4 +43,3 @@
         android:layout_height="wrap_content"
         android:padding="10dp" />
 </LinearLayout>
-

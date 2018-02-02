@@ -128,5 +128,4 @@ public class AutoVerticalScrollTextView extends TextSwitcher implements ViewSwit
             matrix.postTranslate(centerX, centerY);
         }
     }
-
 }

@@ -30,12 +30,12 @@ public class AutoVerticalScrollTextViewUtil {
     private int number = 0;// 用来记录滚动次数
     private int currentPos = 0;// 标记当前显示哪一项
 
-    private ArrayList<String> mDatas = new ArrayList<>();// 需要轮播的数据源
+    private ArrayList<CharSequence> mDatas = new ArrayList<>();// 需要轮播的数据源
 
-    private String title;// 需要改变TextView上面的文本内容
+    private CharSequence title;// 需要改变TextView上面的文本内容
 
     // 构造方法
-    public AutoVerticalScrollTextViewUtil(final AutoVerticalScrollTextView textView, ArrayList<String> datas) {
+    public AutoVerticalScrollTextViewUtil(final AutoVerticalScrollTextView textView, ArrayList<CharSequence> datas) {
         this.mDatas = datas;
         this.textView = textView;
         // 控件点击事件监听
@@ -130,7 +130,7 @@ public class AutoVerticalScrollTextViewUtil {
 
     // 点击事件监听
     public interface OnMyClickListener {
-        void onMyClickListener(int position, String title);
+        void onMyClickListener(int position, CharSequence title);
     }
 
     private OnMyClickListener onMyClickListener;

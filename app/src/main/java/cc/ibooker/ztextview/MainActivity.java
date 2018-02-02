@@ -2,6 +2,7 @@ package cc.ibooker.ztextview;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Html;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -12,7 +13,7 @@ import cc.ibooker.ztextviewlib.AutoVerticalScrollTextViewUtil;
 import cc.ibooker.ztextviewlib.SpannableStringTextViewUtil;
 
 public class MainActivity extends AppCompatActivity implements AutoVerticalScrollTextViewUtil.OnMyClickListener {
-    private ArrayList<String> list;
+    private ArrayList<CharSequence> list;
     private AutoVerticalScrollTextViewUtil aUtil;
 
     @Override
@@ -23,8 +24,13 @@ public class MainActivity extends AppCompatActivity implements AutoVerticalScrol
         AutoVerticalScrollTextView textView = (AutoVerticalScrollTextView) findViewById(R.id.autoVerticalScrollTextView);
 
         list = new ArrayList<>();
-        for (int i = 0; i < 5; i++)
-            list.add("测试垂直滚动" + i);
+        for (int i = 0; i < 5; i++) {
+            if (i == 0 || i == 2 || i == 4) {
+                list.add(Html.fromHtml("<font color='#FF7198'>" + "测试垂直滚动" + "</font>" + i + "特殊"));
+            } else {
+                list.add("测试垂直滚动" + i);
+            }
+        }
 
         // 初始化
         aUtil = new AutoVerticalScrollTextViewUtil(textView, list);
@@ -86,7 +92,7 @@ public class MainActivity extends AppCompatActivity implements AutoVerticalScrol
 
     // autoVerticalScrollTextView点击事件监听
     @Override
-    public void onMyClickListener(int position, String title) {
+    public void onMyClickListener(int position, CharSequence title) {
         Toast.makeText(this, list.get(position) + " --- " + title, Toast.LENGTH_SHORT).show();
         if (aUtil.getIsRunning())
             // 停止滚动
