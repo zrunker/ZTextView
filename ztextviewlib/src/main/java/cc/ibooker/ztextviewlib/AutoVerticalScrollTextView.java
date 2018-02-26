@@ -23,7 +23,26 @@ public class AutoVerticalScrollTextView extends TextSwitcher implements ViewSwit
     // mInUp,mOutUp分别构成向下翻页的进出动画
     private Rotate3dAnimation mInUp;
     private Rotate3dAnimation mOutUp;
+    private float textSize = 14; // 设置字体大小
+    private int textColor = Color.parseColor("#555555");// 设置字体颜色
 
+    public float getTextSize() {
+        return textSize;
+    }
+
+    public void setTextSize(float textSize) {
+        this.textSize = textSize;
+    }
+
+    public int getTextColor() {
+        return textColor;
+    }
+
+    public void setTextColor(int textColor) {
+        this.textColor = textColor;
+    }
+
+    // 构造方法
     public AutoVerticalScrollTextView(Context context) {
         this(context, null);
     }
@@ -60,11 +79,11 @@ public class AutoVerticalScrollTextView extends TextSwitcher implements ViewSwit
     public View makeView() {
         TextView textView = new TextView(mContext);
         textView.setGravity(Gravity.START);
-        textView.setTextSize(14);
+        textView.setTextSize(textSize);
         textView.setSingleLine(true);
         textView.setGravity(Gravity.CENTER_VERTICAL);
         textView.setEllipsize(TextUtils.TruncateAt.END);
-        textView.setTextColor(Color.parseColor("#555555"));
+        textView.setTextColor(textColor);
         return textView;
     }
 

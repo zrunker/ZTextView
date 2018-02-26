@@ -2,6 +2,7 @@ package cc.ibooker.ztextviewlib;
 
 import android.os.Handler;
 import android.os.Message;
+import android.support.annotation.ColorInt;
 import android.text.TextUtils;
 import android.view.View;
 
@@ -73,6 +74,16 @@ public class AutoVerticalScrollTextViewUtil {
     // 获取当前运行状态
     public boolean getIsRunning() {
         return isRunning;
+    }
+
+    // 设置字体大小
+    public void setTextSize(float textSize) {
+        textView.setTextSize(textSize);
+    }
+
+    // 设置字体颜色
+    public void setTextColor(@ColorInt int textColor) {
+        textView.setTextColor(textColor);
     }
 
     // 开启线程
