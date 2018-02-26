@@ -77,13 +77,15 @@ public class AutoVerticalScrollTextViewUtil {
     }
 
     // 设置字体大小
-    public void setTextSize(float textSize) {
+    public AutoVerticalScrollTextViewUtil setTextSize(float textSize) {
         textView.setTextSize(textSize);
+        return this;
     }
 
     // 设置字体颜色
-    public void setTextColor(@ColorInt int textColor) {
+    public AutoVerticalScrollTextViewUtil setTextColor(@ColorInt int textColor) {
         textView.setTextColor(textColor);
+        return this;
     }
 
     // 开启线程

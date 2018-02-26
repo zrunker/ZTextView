@@ -1,5 +1,6 @@
 package cc.ibooker.ztextview;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
@@ -34,8 +35,12 @@ public class MainActivity extends AppCompatActivity implements AutoVerticalScrol
 
         // 初始化
         aUtil = new AutoVerticalScrollTextViewUtil(textView, list);
+
         aUtil.setDuration(5000)// 设置上下滚动事件间隔
+                .setTextColor(Color.parseColor("#40aff2"))
+                .setTextSize(12)
                 .start();
+
         // 点击事件监听
         aUtil.setOnMyClickListener(this);
 
