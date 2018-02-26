@@ -24,7 +24,7 @@ public class AutoVerticalScrollTextView extends TextSwitcher implements ViewSwit
     private Rotate3dAnimation mInUp;
     private Rotate3dAnimation mOutUp;
 
-    private float textSize = 14; // 设置字体大小
+    private float textSize = 13; // 设置字体大小
     private int textColor = Color.parseColor("#555555");// 设置字体颜色
 
     float getTextSize() {
